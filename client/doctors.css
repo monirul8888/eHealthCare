@@ -1,0 +1,54 @@
+
+
+.doctors-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+
+}
+
+.doctor-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    width: 250px; 
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden; 
+}
+
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Doctor Image */
+.doctor-card img {
+    width: 100%; /* Ensures image fits card width */
+    height: 200px; /* Sets fixed height for uniformity */
+    object-fit: cover; /* Prevents distortion while maintaining aspect ratio */
+    border-radius: 10px 10px 0 0; /* Rounds the top corners */
+    display: block; /* Ensures proper spacing in some browsers */
+}
+
+/* Doctor Details */
+.doctor-card h4 {
+    margin: 10px 0 5px;
+    color: #2c3e50;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.doctor-card p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
